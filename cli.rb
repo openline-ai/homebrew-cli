@@ -1,10 +1,10 @@
 class ShowSecrets < Formula
     desc "Everything you need to get started with Openline"
     homepage "https://openline.ai/docs"
-    url "https://openline-cli.s3.amazonaws.com/openline-v0.4.3-f136c4b-linux-arm.tar.xz"
+    url "https://s3.amazonaws.com/openline.sh/openline-v0.4.3-f136c4b-linux-arm.tar.xz"
 
     # to get the latest SHA:
-    # find latest release: aws s3api list-objects --bucket openline-cli
+    # find latest release: aws s3api list-objects --bucket openline.sh
     # download release: aws s3 cp [s3 address of tarball] . 
     # get sha: shasum -a 256 [filename]
   
