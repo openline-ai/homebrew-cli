@@ -16,7 +16,7 @@ class Openline < Formula
     depends_on "git"
     depends_on "helm"
     depends_on "kubectl"
-    depends_on "xcode
+    depends_on "xcode"
 
     def install
         inreplace "bin/heroku", /^CLIENT_HOME=/, "export HEROKU_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
