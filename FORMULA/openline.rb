@@ -18,6 +18,7 @@ class Openline < Formula
     depends_on "kubectl"
 
     def install
+        bin.install "openline"
         inreplace "bin/heroku", /^CLIENT_HOME=/, "export HEROKU_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
         libexec.install Dir["*"]
         bin.install_symlink libexec/"bin/openline"
