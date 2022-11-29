@@ -2,6 +2,7 @@ class Openline < Formula
     desc "Everything you need to get started with Openline"
     homepage "https://openline.ai/docs"
     url "https://openline.sh/openline-v0.4.3-f136c4b-linux-arm.tar.xz"
+    license "Apache-2.0"
 
     # to get the latest SHA:
     # find latest release: aws s3api list-objects --bucket openline.sh
