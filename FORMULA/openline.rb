@@ -10,8 +10,6 @@ class Openline < Formula
   
     sha256 "93e829ed12dfbe3ef644c86036b9d899d2bb702da58f99b59310e90e25a02849"
 
-    depends_on "openline-cli"
-
     def install
         inreplace "bin/openline", /^CLIENT_HOME=/, "export OPENLINE_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
         libexec.install Dir["*"]
