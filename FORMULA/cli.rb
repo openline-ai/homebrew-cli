@@ -1,4 +1,4 @@
-class ShowSecrets < Formula
+class Cli < Formula
     desc "Everything you need to get started with Openline"
     homepage "https://openline.ai/docs"
     url "https://openline.sh/openline-v0.4.3-f136c4b-linux-arm.tar.xz"
