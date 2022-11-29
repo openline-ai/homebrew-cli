@@ -5,7 +5,7 @@ class ShowSecrets < Formula
 
     # to get the latest SHA:
     # find latest release: aws s3api list-objects --bucket openline.sh
-    # download release: aws s3 cp [s3 address of tarball] . 
+    # download release: aws s3 cp [s3:// address of tarball] . 
     # get sha: shasum -a 256 [filename]
   
     sha256 "93e829ed12dfbe3ef644c86036b9d899d2bb702da58f99b59310e90e25a02849"
