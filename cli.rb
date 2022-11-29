@@ -1,7 +1,7 @@
 class ShowSecrets < Formula
     desc "Everything you need to get started with Openline"
     homepage "https://openline.ai/docs"
-    url "https://s3.amazonaws.com/openline.sh/openline-v0.4.3-f136c4b-linux-arm.tar.xz"
+    url "https://openline.sh/openline-v0.4.3-f136c4b-linux-arm.tar.xz"
 
     # to get the latest SHA:
     # find latest release: aws s3api list-objects --bucket openline.sh
