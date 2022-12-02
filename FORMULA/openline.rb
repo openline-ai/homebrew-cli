@@ -19,7 +19,7 @@ class Openline < Formula
 
     def install
         bin.install "openline"
-        inreplace "bin/heroku", /^CLIENT_HOME=/, "export HEROKU_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
+        inreplace "bin/openline", /^CLIENT_HOME=/, "export OPENLINE_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
         libexec.install Dir["*"]
         bin.install_symlink libexec/"bin/openline"
     end
