@@ -19,7 +19,6 @@ class Openline < Formula
 
     def install
         inreplace "bin/openline", /^CLIENT_HOME=/, "export OPENLINE_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
-        inreplace "bin/openline", "\"$DIR/node\"", Formula["openline-node"].opt_bin/"node"
         libexec.install Dir["*"]
         bin.install_symlink libexec/"bin/openline"
     end
