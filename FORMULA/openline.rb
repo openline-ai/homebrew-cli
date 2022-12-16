@@ -23,9 +23,5 @@ class Openline < Formula
         bin.install_symlink libexec/"bin/openline"
     end
 
-    def caveats; <<-EOS
-        This tool may be used as a standalone CLI to interface with the Openline suite
-        
-    EOS
     end
 end
