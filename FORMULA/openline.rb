@@ -23,5 +23,4 @@ class Openline < Formula
         bin.install_symlink libexec/"bin/openline"
     end
 
-    end
 end
