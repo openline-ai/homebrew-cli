@@ -9,7 +9,7 @@ class Openline < Formula
     # download release: aws s3 cp [s3:// address of tarball] . 
     # get sha: shasum -a 256 [filename]
   
-    sha256 "fc14cbf0de811318b4b9efb6a22bd56bafd35adbdbacf3e828fc9e5077452cf3"
+    sha256 "281d94f48210ebd2d88ffb7fdce5a449367ef80b14d6335128cb54f4b0de26c5"
     
     depends_on "colima"
     depends_on "docker"
